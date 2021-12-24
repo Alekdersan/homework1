@@ -3,13 +3,13 @@ package ru.skypro;
 public class Main {
 
     public static void main(String[] args) {
-	// Задача 1.
-        byte a = 105;
-        short b = 520;
-        int c = 12200;
-        long d = 152562L;
-        float e = 45.658f;
-        double f = 5.2548745;
+      // Задача 1.
+       byte a = 5;
+       short b = 520;
+       int c = 12_200;
+       long d = 152562L;
+       float e = 25.65f;
+       double f = 5.2548745;
 
 
         // Задача 2.
@@ -53,28 +53,33 @@ public class Main {
         System.out.println("Потребуется " + averageDay + " дней в среднем, чтобы добиться результата!");
 
         // Задача 5.
-        var name1 = "Маша"; // зарплата 67 760
-        int salaryName1 = 67760;
-        //float percentage = 0.10f;
-        float percentage = 1.10f;//повышение зарплаты на 10 % от месячной
-        //float increaseName1 = (float) salaryName1 * percentage + salaryName1;
-        float increaseName1 = (float) salaryName1 * percentage;
-        System.out.println("Зарплата после повышения у Маши " + increaseName1 + " рублей.");
-        // годовой доход до, после и разница
+        int salaryMasha = 67760;
+        float percentage = 1.10f;
+        float increaseMasha = (float) salaryMasha * percentage;
+        System.out.println("Зарплата после повышения у Маши " + increaseMasha + " рублей.");
         var year = 12;
-        float salaryName1Year = salaryName1 * year;
-        float increaseName1Year = increaseName1 * year;
-        float differenceName1 = increaseName1Year - salaryName1Year;
-        System.out.println("Годовой доход у Маши вырос на " + differenceName1 + " рублей!");
-        //System.out.println(increaseName1Year + " and " + salaryName1Year);
+        float salaryMashaYear = salaryMasha * year;
+        float increaseMashaYear = increaseMasha * year;
+        float differenceMasha = increaseMashaYear - salaryMashaYear;
+        System.out.println("Годовой доход у Маши вырос на " + differenceMasha + " рублей!");
 
-        var name2 = "Денис"; // зарплата 83 690
-        int salaryName2 = 83690;
-        var name3 = "Кристина"; // зарплата 76 230
-        int salaryName3 = 76230;
-        //float percentage = 0.10f; //повышение зарплаты на 10 % от месячной, рост годового дохода
-        //float increaseName1 = (float) salaryName1 * percentage + salaryName1;
-        //System.out.println("Зарплата после повышения у Маши " + increaseName1 + " рублей.");
+        int salaryDenis = 83690;
+        float increaseDenis = (float) salaryDenis * percentage;
+        System.out.println("Зарплата после повышения у Дениса " + increaseDenis + " рублей.");
+        float salaryDenisYear = salaryDenis * year;
+        float increaseDenisYear = increaseDenis * year;
+        float differenceDenis = increaseDenisYear - salaryDenisYear;
+        System.out.println("Годовой доход у Дениса вырос на " + differenceDenis + " рублей!");
+
+        int salaryKristina = 76230;
+        float increaseKristina = (float) salaryKristina * percentage;
+        System.out.println("Зарплата после повышения у Кристины " + increaseKristina + " рублей.");
+        float salaryKristinaYear = salaryKristina * year;
+        float increaseKristinaYear = increaseKristina * year;
+        float differenceKristina = increaseKristinaYear - salaryKristinaYear;
+        System.out.println("Годовой доход у Кристины вырос на " + differenceKristina + " рублей!");
+
+
 
 
 
